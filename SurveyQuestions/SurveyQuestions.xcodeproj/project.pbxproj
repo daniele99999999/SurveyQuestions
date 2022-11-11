@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D31AA1E291DBA730048975D /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D31AA1D291DBA730048975D /* HomeViewModelTests.swift */; };
+		3D31AA20291DBA8E0048975D /* SurveyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D31AA1F291DBA8E0048975D /* SurveyViewModelTests.swift */; };
+		3D31AA22291DBA9F0048975D /* SurveyDatasourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D31AA21291DBA9F0048975D /* SurveyDatasourceTests.swift */; };
+		3D31AA24291DBABA0048975D /* SurveyCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D31AA23291DBABA0048975D /* SurveyCellViewModelTests.swift */; };
+		3D397CAF291A779F00254536 /* QuestionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D397CAE291A779F00254536 /* QuestionList.swift */; };
+		3D9CD771291A893200227BCC /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9CD76E291A893200227BCC /* ApiService.swift */; };
+		3D9CD772291A893200227BCC /* DataTaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9CD76F291A893200227BCC /* DataTaskService.swift */; };
+		3D9CD773291A893200227BCC /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9CD770291A893200227BCC /* NetworkService.swift */; };
+		3D9CD777291ABE8500227BCC /* QuestionSubmit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9CD776291ABE8500227BCC /* QuestionSubmit.swift */; };
+		3D9CD77E291AC0E800227BCC /* HelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9CD77D291AC0E800227BCC /* HelperTests.swift */; };
+		3D9CD780291AC1C400227BCC /* QuestionListDataMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D9CD77F291AC1C400227BCC /* QuestionListDataMock.json */; };
+		3D9CD784291AC21F00227BCC /* ApiServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9CD781291AC21F00227BCC /* ApiServiceMock.swift */; };
+		3D9CD785291AC21F00227BCC /* DataTaskServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9CD782291AC21F00227BCC /* DataTaskServiceMock.swift */; };
+		3D9CD786291AC21F00227BCC /* NetworkServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9CD783291AC21F00227BCC /* NetworkServiceMock.swift */; };
+		3D9CD788291ACD9700227BCC /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9CD787291ACD9700227BCC /* NetworkServiceTests.swift */; };
+		3D9CD78A291ACD9E00227BCC /* ApiServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9CD789291ACD9E00227BCC /* ApiServiceTests.swift */; };
+		3D9CD78C291AD51F00227BCC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9CD78B291AD51F00227BCC /* HomeViewModel.swift */; };
+		3D9CD78E291AD52D00227BCC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9CD78D291AD52D00227BCC /* HomeViewController.swift */; };
+		3D9CD790291AD53400227BCC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9CD78F291AD53400227BCC /* HomeView.swift */; };
+		3D9CD792291AD54300227BCC /* SurveyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9CD791291AD54300227BCC /* SurveyViewModel.swift */; };
+		3D9CD794291AD54F00227BCC /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9CD793291AD54F00227BCC /* SurveyViewController.swift */; };
+		3D9CD796291AD55700227BCC /* SurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9CD795291AD55700227BCC /* SurveyView.swift */; };
+		3D9CD798291AD56700227BCC /* SurveyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9CD797291AD56700227BCC /* SurveyCell.swift */; };
+		3D9CD79A291AD57000227BCC /* SurveyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9CD799291AD57000227BCC /* SurveyCellViewModel.swift */; };
+		3DBCB8ED291B06100055467F /* SurveyDatasourceProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBCB8EC291B06100055467F /* SurveyDatasourceProviderProtocol.swift */; };
+		3DBCB8EF291B06780055467F /* UICollectionView+CustomCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBCB8EE291B06780055467F /* UICollectionView+CustomCells.swift */; };
+		3DBCB8F1291B06BC0055467F /* SurveyDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBCB8F0291B06BC0055467F /* SurveyDatasource.swift */; };
+		3DBCB8F3291B15090055467F /* UIControl+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBCB8F2291B15090055467F /* UIControl+Action.swift */; };
+		3DBCB8F7291B16680055467F /* UIKit+BindOnMainThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBCB8F6291B16680055467F /* UIKit+BindOnMainThread.swift */; };
+		3DD8D1F12919EC790043E899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8D1F02919EC790043E899 /* AppDelegate.swift */; };
+		3DD8D1FA2919EC7A0043E899 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD8D1F92919EC7A0043E899 /* Assets.xcassets */; };
+		3DD8D2262919F22B0043E899 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD8D2252919F22B0043E899 /* LaunchScreen.storyboard */; };
+		3DD8D2292919F2620043E899 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8D2272919F2620043E899 /* Resources.swift */; };
+		3DD8D22A2919F2620043E899 /* CommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8D2282919F2620043E899 /* CommonTypes.swift */; };
+		3DD8D2312919F5150043E899 /* UIViewController+BackArrowOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8D22F2919F5150043E899 /* UIViewController+BackArrowOnly.swift */; };
+		3DD8D2322919F5150043E899 /* UIColor+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8D2302919F5150043E899 /* UIColor+Helper.swift */; };
+		3DD8D2342919F5480043E899 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8D2332919F5480043E899 /* MainCoordinator.swift */; };
+		3DD8D23A2919F5810043E899 /* ApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8D2352919F5810043E899 /* ApiProtocol.swift */; };
+		3DD8D23B2919F5810043E899 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8D2362919F5810043E899 /* CoordinatorProtocol.swift */; };
+		3DD8D23C2919F5810043E899 /* DataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8D2372919F5810043E899 /* DataTaskProtocol.swift */; };
+		3DD8D23D2919F5810043E899 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD8D2382919F5810043E899 /* NetworkProtocol.swift */; };
+		3DE3E4ED291BFC7A00E0B732 /* UIBarButtonItem+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE3E4EC291BFC7A00E0B732 /* UIBarButtonItem+Action.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DD8D2042919EC7B0043E899 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DD8D1E52919EC790043E899 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DD8D1EC2919EC790043E899;
+			remoteInfo = SurveyQuestions;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D31AA1D291DBA730048975D /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		3D31AA1F291DBA8E0048975D /* SurveyViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewModelTests.swift; sourceTree = "<group>"; };
+		3D31AA21291DBA9F0048975D /* SurveyDatasourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyDatasourceTests.swift; sourceTree = "<group>"; };
+		3D31AA23291DBABA0048975D /* SurveyCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyCellViewModelTests.swift; sourceTree = "<group>"; };
+		3D397CAE291A779F00254536 /* QuestionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionList.swift; sourceTree = "<group>"; };
+		3D9CD76E291A893200227BCC /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		3D9CD76F291A893200227BCC /* DataTaskService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTaskService.swift; sourceTree = "<group>"; };
+		3D9CD770291A893200227BCC /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		3D9CD776291ABE8500227BCC /* QuestionSubmit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionSubmit.swift; sourceTree = "<group>"; };
+		3D9CD77D291AC0E800227BCC /* HelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperTests.swift; sourceTree = "<group>"; };
+		3D9CD77F291AC1C400227BCC /* QuestionListDataMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuestionListDataMock.json; sourceTree = "<group>"; };
+		3D9CD781291AC21F00227BCC /* ApiServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiServiceMock.swift; sourceTree = "<group>"; };
+		3D9CD782291AC21F00227BCC /* DataTaskServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTaskServiceMock.swift; sourceTree = "<group>"; };
+		3D9CD783291AC21F00227BCC /* NetworkServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceMock.swift; sourceTree = "<group>"; };
+		3D9CD787291ACD9700227BCC /* NetworkServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		3D9CD789291ACD9E00227BCC /* ApiServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiServiceTests.swift; sourceTree = "<group>"; };
+		3D9CD78B291AD51F00227BCC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		3D9CD78D291AD52D00227BCC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3D9CD78F291AD53400227BCC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3D9CD791291AD54300227BCC /* SurveyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewModel.swift; sourceTree = "<group>"; };
+		3D9CD793291AD54F00227BCC /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
+		3D9CD795291AD55700227BCC /* SurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyView.swift; sourceTree = "<group>"; };
+		3D9CD797291AD56700227BCC /* SurveyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyCell.swift; sourceTree = "<group>"; };
+		3D9CD799291AD57000227BCC /* SurveyCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyCellViewModel.swift; sourceTree = "<group>"; };
+		3DBCB8EC291B06100055467F /* SurveyDatasourceProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyDatasourceProviderProtocol.swift; sourceTree = "<group>"; };
+		3DBCB8EE291B06780055467F /* UICollectionView+CustomCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+CustomCells.swift"; sourceTree = "<group>"; };
+		3DBCB8F0291B06BC0055467F /* SurveyDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyDatasource.swift; sourceTree = "<group>"; };
+		3DBCB8F2291B15090055467F /* UIControl+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Action.swift"; sourceTree = "<group>"; };
+		3DBCB8F6291B16680055467F /* UIKit+BindOnMainThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+BindOnMainThread.swift"; sourceTree = "<group>"; };
+		3DD8D1ED2919EC790043E899 /* SurveyQuestions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurveyQuestions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DD8D1F02919EC790043E899 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DD8D1F92919EC7A0043E899 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DD8D1FE2919EC7A0043E899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DD8D2032919EC7B0043E899 /* SurveyQuestionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurveyQuestionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DD8D2252919F22B0043E899 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DD8D2272919F2620043E899 /* Resources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		3DD8D2282919F2620043E899 /* CommonTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTypes.swift; sourceTree = "<group>"; };
+		3DD8D22F2919F5150043E899 /* UIViewController+BackArrowOnly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+BackArrowOnly.swift"; sourceTree = "<group>"; };
+		3DD8D2302919F5150043E899 /* UIColor+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Helper.swift"; sourceTree = "<group>"; };
+		3DD8D2332919F5480043E899 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		3DD8D2352919F5810043E899 /* ApiProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiProtocol.swift; sourceTree = "<group>"; };
+		3DD8D2362919F5810043E899 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		3DD8D2372919F5810043E899 /* DataTaskProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTaskProtocol.swift; sourceTree = "<group>"; };
+		3DD8D2382919F5810043E899 /* NetworkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		3DE3E4EC291BFC7A00E0B732 /* UIBarButtonItem+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Action.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DD8D1EA2919EC790043E899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD8D2002919EC7B0043E899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D9CD778291ABEEB00227BCC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3D9CD78B291AD51F00227BCC /* HomeViewModel.swift */,
+				3D9CD78D291AD52D00227BCC /* HomeViewController.swift */,
+				3D9CD78F291AD53400227BCC /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3D9CD779291ABEF200227BCC /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				3D9CD77A291ABF0C00227BCC /* Cell */,
+				3D9CD791291AD54300227BCC /* SurveyViewModel.swift */,
+				3DBCB8F0291B06BC0055467F /* SurveyDatasource.swift */,
+				3D9CD793291AD54F00227BCC /* SurveyViewController.swift */,
+				3D9CD795291AD55700227BCC /* SurveyView.swift */,
+			);
+			path = Survey;
+			sourceTree = "<group>";
+		};
+		3D9CD77A291ABF0C00227BCC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3D9CD799291AD57000227BCC /* SurveyCellViewModel.swift */,
+				3D9CD797291AD56700227BCC /* SurveyCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3D9CD77B291ABF5D00227BCC /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3D9CD782291AC21F00227BCC /* DataTaskServiceMock.swift */,
+				3D9CD783291AC21F00227BCC /* NetworkServiceMock.swift */,
+				3D9CD781291AC21F00227BCC /* ApiServiceMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		3D9CD77C291ABF6700227BCC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3D9CD77F291AC1C400227BCC /* QuestionListDataMock.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3DD8D1E42919EC790043E899 = {
+			isa = PBXGroup;
+			children = (
+				3DD8D1EF2919EC790043E899 /* SurveyQuestions */,
+				3DD8D2062919EC7B0043E899 /* SurveyQuestionsTests */,
+				3DD8D1EE2919EC790043E899 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DD8D1EE2919EC790043E899 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DD8D1ED2919EC790043E899 /* SurveyQuestions.app */,
+				3DD8D2032919EC7B0043E899 /* SurveyQuestionsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DD8D1EF2919EC790043E899 /* SurveyQuestions */ = {
+			isa = PBXGroup;
+			children = (
+				3DD8D2202919F0930043E899 /* Extensions */,
+				3DD8D2212919F09E0043E899 /* Protocols */,
+				3DD8D2222919F0B00043E899 /* Services */,
+				3DD8D2232919F0BB0043E899 /* Models */,
+				3DD8D2242919F0C60043E899 /* Stories */,
+				3DD8D2272919F2620043E899 /* Resources.swift */,
+				3DD8D2282919F2620043E899 /* CommonTypes.swift */,
+				3DD8D1F02919EC790043E899 /* AppDelegate.swift */,
+				3DD8D1F92919EC7A0043E899 /* Assets.xcassets */,
+				3DD8D1FE2919EC7A0043E899 /* Info.plist */,
+				3DD8D2252919F22B0043E899 /* LaunchScreen.storyboard */,
+			);
+			path = SurveyQuestions;
+			sourceTree = "<group>";
+		};
+		3DD8D2062919EC7B0043E899 /* SurveyQuestionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D9CD77B291ABF5D00227BCC /* Mocks */,
+				3D9CD77C291ABF6700227BCC /* Resources */,
+				3D9CD77D291AC0E800227BCC /* HelperTests.swift */,
+				3D9CD787291ACD9700227BCC /* NetworkServiceTests.swift */,
+				3D9CD789291ACD9E00227BCC /* ApiServiceTests.swift */,
+				3D31AA1D291DBA730048975D /* HomeViewModelTests.swift */,
+				3D31AA1F291DBA8E0048975D /* SurveyViewModelTests.swift */,
+				3D31AA21291DBA9F0048975D /* SurveyDatasourceTests.swift */,
+				3D31AA23291DBABA0048975D /* SurveyCellViewModelTests.swift */,
+			);
+			path = SurveyQuestionsTests;
+			sourceTree = "<group>";
+		};
+		3DD8D2202919F0930043E899 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3DD8D2302919F5150043E899 /* UIColor+Helper.swift */,
+				3DBCB8F6291B16680055467F /* UIKit+BindOnMainThread.swift */,
+				3DD8D22F2919F5150043E899 /* UIViewController+BackArrowOnly.swift */,
+				3DBCB8EE291B06780055467F /* UICollectionView+CustomCells.swift */,
+				3DBCB8F2291B15090055467F /* UIControl+Action.swift */,
+				3DE3E4EC291BFC7A00E0B732 /* UIBarButtonItem+Action.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3DD8D2212919F09E0043E899 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3DD8D2362919F5810043E899 /* CoordinatorProtocol.swift */,
+				3DD8D2372919F5810043E899 /* DataTaskProtocol.swift */,
+				3DD8D2382919F5810043E899 /* NetworkProtocol.swift */,
+				3DD8D2352919F5810043E899 /* ApiProtocol.swift */,
+				3DBCB8EC291B06100055467F /* SurveyDatasourceProviderProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3DD8D2222919F0B00043E899 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3D9CD76F291A893200227BCC /* DataTaskService.swift */,
+				3D9CD770291A893200227BCC /* NetworkService.swift */,
+				3D9CD76E291A893200227BCC /* ApiService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3DD8D2232919F0BB0043E899 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D397CAE291A779F00254536 /* QuestionList.swift */,
+				3D9CD776291ABE8500227BCC /* QuestionSubmit.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3DD8D2242919F0C60043E899 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				3D9CD778291ABEEB00227BCC /* Home */,
+				3D9CD779291ABEF200227BCC /* Survey */,
+				3DD8D2332919F5480043E899 /* MainCoordinator.swift */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DD8D1EC2919EC790043E899 /* SurveyQuestions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DD8D2172919EC7B0043E899 /* Build configuration list for PBXNativeTarget "SurveyQuestions" */;
+			buildPhases = (
+				3DD8D1E92919EC790043E899 /* Sources */,
+				3DD8D1EA2919EC790043E899 /* Frameworks */,
+				3DD8D1EB2919EC790043E899 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SurveyQuestions;
+			productName = SurveyQuestions;
+			productReference = 3DD8D1ED2919EC790043E899 /* SurveyQuestions.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DD8D2022919EC7B0043E899 /* SurveyQuestionsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DD8D21A2919EC7B0043E899 /* Build configuration list for PBXNativeTarget "SurveyQuestionsTests" */;
+			buildPhases = (
+				3DD8D1FF2919EC7B0043E899 /* Sources */,
+				3DD8D2002919EC7B0043E899 /* Frameworks */,
+				3DD8D2012919EC7B0043E899 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DD8D2052919EC7B0043E899 /* PBXTargetDependency */,
+			);
+			name = SurveyQuestionsTests;
+			productName = SurveyQuestionsTests;
+			productReference = 3DD8D2032919EC7B0043E899 /* SurveyQuestionsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DD8D1E52919EC790043E899 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					3DD8D1EC2919EC790043E899 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					3DD8D2022919EC7B0043E899 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 3DD8D1EC2919EC790043E899;
+					};
+				};
+			};
+			buildConfigurationList = 3DD8D1E82919EC790043E899 /* Build configuration list for PBXProject "SurveyQuestions" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DD8D1E42919EC790043E899;
+			productRefGroup = 3DD8D1EE2919EC790043E899 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DD8D1EC2919EC790043E899 /* SurveyQuestions */,
+				3DD8D2022919EC7B0043E899 /* SurveyQuestionsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DD8D1EB2919EC790043E899 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD8D2262919F22B0043E899 /* LaunchScreen.storyboard in Resources */,
+				3DD8D1FA2919EC7A0043E899 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD8D2012919EC7B0043E899 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9CD780291AC1C400227BCC /* QuestionListDataMock.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DD8D1E92919EC790043E899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9CD78C291AD51F00227BCC /* HomeViewModel.swift in Sources */,
+				3DBCB8F1291B06BC0055467F /* SurveyDatasource.swift in Sources */,
+				3DD8D23A2919F5810043E899 /* ApiProtocol.swift in Sources */,
+				3DBCB8EF291B06780055467F /* UICollectionView+CustomCells.swift in Sources */,
+				3DBCB8ED291B06100055467F /* SurveyDatasourceProviderProtocol.swift in Sources */,
+				3DD8D2292919F2620043E899 /* Resources.swift in Sources */,
+				3DD8D2342919F5480043E899 /* MainCoordinator.swift in Sources */,
+				3D9CD78E291AD52D00227BCC /* HomeViewController.swift in Sources */,
+				3DD8D2312919F5150043E899 /* UIViewController+BackArrowOnly.swift in Sources */,
+				3DE3E4ED291BFC7A00E0B732 /* UIBarButtonItem+Action.swift in Sources */,
+				3DD8D23B2919F5810043E899 /* CoordinatorProtocol.swift in Sources */,
+				3D9CD796291AD55700227BCC /* SurveyView.swift in Sources */,
+				3DD8D22A2919F2620043E899 /* CommonTypes.swift in Sources */,
+				3D9CD771291A893200227BCC /* ApiService.swift in Sources */,
+				3D9CD792291AD54300227BCC /* SurveyViewModel.swift in Sources */,
+				3DD8D1F12919EC790043E899 /* AppDelegate.swift in Sources */,
+				3DD8D23D2919F5810043E899 /* NetworkProtocol.swift in Sources */,
+				3D9CD798291AD56700227BCC /* SurveyCell.swift in Sources */,
+				3DBCB8F7291B16680055467F /* UIKit+BindOnMainThread.swift in Sources */,
+				3D9CD773291A893200227BCC /* NetworkService.swift in Sources */,
+				3D9CD777291ABE8500227BCC /* QuestionSubmit.swift in Sources */,
+				3D397CAF291A779F00254536 /* QuestionList.swift in Sources */,
+				3DBCB8F3291B15090055467F /* UIControl+Action.swift in Sources */,
+				3D9CD79A291AD57000227BCC /* SurveyCellViewModel.swift in Sources */,
+				3DD8D23C2919F5810043E899 /* DataTaskProtocol.swift in Sources */,
+				3D9CD772291A893200227BCC /* DataTaskService.swift in Sources */,
+				3DD8D2322919F5150043E899 /* UIColor+Helper.swift in Sources */,
+				3D9CD790291AD53400227BCC /* HomeView.swift in Sources */,
+				3D9CD794291AD54F00227BCC /* SurveyViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD8D1FF2919EC7B0043E899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9CD788291ACD9700227BCC /* NetworkServiceTests.swift in Sources */,
+				3D31AA1E291DBA730048975D /* HomeViewModelTests.swift in Sources */,
+				3D31AA24291DBABA0048975D /* SurveyCellViewModelTests.swift in Sources */,
+				3D31AA20291DBA8E0048975D /* SurveyViewModelTests.swift in Sources */,
+				3D9CD786291AC21F00227BCC /* NetworkServiceMock.swift in Sources */,
+				3D9CD78A291ACD9E00227BCC /* ApiServiceTests.swift in Sources */,
+				3D9CD784291AC21F00227BCC /* ApiServiceMock.swift in Sources */,
+				3D9CD77E291AC0E800227BCC /* HelperTests.swift in Sources */,
+				3D31AA22291DBA9F0048975D /* SurveyDatasourceTests.swift in Sources */,
+				3D9CD785291AC21F00227BCC /* DataTaskServiceMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DD8D2052919EC7B0043E899 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DD8D1EC2919EC790043E899 /* SurveyQuestions */;
+			targetProxy = 3DD8D2042919EC7B0043E899 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3DD8D2152919EC7B0043E899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DD8D2162919EC7B0043E899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DD8D2182919EC7B0043E899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SurveyQuestions/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CodeChallenge.SurveyQuestions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3DD8D2192919EC7B0043E899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SurveyQuestions/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CodeChallenge.SurveyQuestions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3DD8D21B2919EC7B0043E899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CodeChallenge.SurveyQuestionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SurveyQuestions.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SurveyQuestions";
+			};
+			name = Debug;
+		};
+		3DD8D21C2919EC7B0043E899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CodeChallenge.SurveyQuestionsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SurveyQuestions.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SurveyQuestions";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DD8D1E82919EC790043E899 /* Build configuration list for PBXProject "SurveyQuestions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DD8D2152919EC7B0043E899 /* Debug */,
+				3DD8D2162919EC7B0043E899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DD8D2172919EC7B0043E899 /* Build configuration list for PBXNativeTarget "SurveyQuestions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DD8D2182919EC7B0043E899 /* Debug */,
+				3DD8D2192919EC7B0043E899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DD8D21A2919EC7B0043E899 /* Build configuration list for PBXNativeTarget "SurveyQuestionsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DD8D21B2919EC7B0043E899 /* Debug */,
+				3DD8D21C2919EC7B0043E899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DD8D1E52919EC790043E899 /* Project object */;
+}
